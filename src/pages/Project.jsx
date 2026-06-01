@@ -3,6 +3,8 @@ import photo1 from '../assets/photo1.png'
 import photo2 from '../assets/photo2.png'
 import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.png'
+import photo3 from '../assets/ai-site-builder.png'
+import img3 from '../assets/ai-site.png'
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from "framer-motion"
 
 const useIsMobile = (query = "(max-width:630px)") => {
@@ -39,7 +41,13 @@ export default function Projects() {
       link: "https://quick-chat-frontend-amber.vercel.app",
       bgColor: "#503C77",
       image: isMobile ? photo2 : img2
-    }
+    },
+    {
+      title: "Ai-Site-Builder",
+      link: "https://ai-website-builder-8ax2.vercel.app/",
+      bgColor: "linear-gradient(135deg, #030014 0%, #0B061A 50%, #050816 100%)",
+      image: isMobile ? photo3 : img3
+    },
   ], [isMobile]);
 
   const { scrollYProgress } = useScroll({
