@@ -77,7 +77,7 @@ export default function Home() {
 
             <motion.div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }}>
               <a href="#project" className="px-6 py-3 rounded-full font-medium text-lg text-white bg-linear-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] shadow-lg hover:scale-105 transition-all">View my work</a>
-              <a href="/Raj-resume.pdf" download className="px-6 py-3 rounded-full text-lg font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all">My resume</a>
+              <a href="/Raj's Resume.pdf" download className="px-6 py-3 rounded-full text-lg font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all">My resume</a>
             </motion.div>
 
             <div className="mt-10 flex gap-5 text-2xl md:text-3xl justify-center lg:justify-start">
