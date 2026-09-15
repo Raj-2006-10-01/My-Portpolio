@@ -3,8 +3,10 @@ import photo1 from '../assets/photo1.png'
 import photo2 from '../assets/photo2.png'
 import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.png'
+
 import photo3 from '../assets/ai-site-builder.png'
 import img3 from '../assets/ai-site.png'
+import img4 from '../assets/img4.png'
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from "framer-motion"
 
 const useIsMobile = (query = "(max-width:630px)") => {
@@ -30,6 +32,12 @@ export default function Projects() {
   const isMobile = useIsMobile();
   const screenRef = useRef(null);
   const projects = useMemo(() => [
+    {
+      title: "Glocery-Store",
+      link: "https://glocory.vercel.app/",
+      bgColor: "#2ba152",
+      image: isMobile ? img4 : img4
+    },
     {
       title: "Resume-Builder",
       link: "https://resume-builder-frontend-liart-six.vercel.app/",
